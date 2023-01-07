@@ -24,7 +24,7 @@ const Destination = () => {
             <div className="destination-content">
                 <div className="destination-info">
                     <p className="pick-destination"><span>01</span>PICK YOUR DISTINATION</p>
-                    <img src={`../../../assets/destination/image-${data.name}.png`} className="image-star" alt="star image" />
+                    <img src={`../../../assets/destination/image-${data.name}.webp`} className="image-star" alt="star image" />
                 </div>
                 <div className="destination-star">
                     <div className="star-description">
