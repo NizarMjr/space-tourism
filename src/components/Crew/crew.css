@@ -1,0 +1,97 @@
+.crew {
+    background-image: url(../../../public/assets/crew/background-crew-desktop.jpg);
+    color: white;
+    transition: 1s;
+
+}
+
+.crew-content {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 0 auto;
+}
+
+.crew-list {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+
+
+.crew-list .pic {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.crew .title {
+    margin-left: 25px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.role {
+    display: block;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.name {
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.bio {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.crew-picture {
+    margin-top: -3rem;
+}
+
+@media (min-width:815px) {
+    .crew-picture {
+        flex-basis: 700px;
+    }
+
+}
+
+.crew-picture img {
+    max-width: 100%;
+}
+
+@media (max-width:933px) {
+    .crew-content {
+        grid-auto-flow: column dense;
+    }
+
+    .crew-picture {
+        text-align: center;
+    }
+}
+
+@media (max-width:814px) {
+    .crew-content {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .crew-picture img {
+        max-width: 300px;
+    }
+}

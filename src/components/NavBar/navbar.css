@@ -1,0 +1,118 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.logo {
+    width: calc(100% / 3.5);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    right: -35px;
+    transform: translateX(1.5rem);
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+    backdrop-filter: blur(30px);
+}
+
+.links li a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    padding-bottom: 0.5rem;
+}
+
+.links li a span {
+    margin-right: .5rem;
+}
+
+
+.links li a:hover {
+    transform: translateX(10px);
+}
+
+
+.burger-icon {
+    cursor: pointer;
+}
+
+.burger {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    top: -17px;
+    padding: 3rem;
+    transition: .3s;
+    backdrop-filter: blur(20px);
+}
+
+.burger ul {
+    padding: 0;
+}
+
+.burger ul .close-icon {
+    margin-top: -1rem;
+    position: absolute;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.burger ul .close-icon:hover {
+    transform: rotate(360deg);
+}
+
+.burger ul li {
+    text-decoration: none;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.burger ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width:993px) {
+    .burger-icon {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    .links {
+        display: none;
+    }
+
+    .logo::after {
+        display: none;
+    }
+}

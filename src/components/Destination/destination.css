@@ -1,0 +1,115 @@
+.destination {
+    background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
+}
+
+.destination-content {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 4rem;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+}
+
+.destination-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destination-info .pick-destination {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+.destination .image-star {
+    animation: rotation 7s infinite linear;
+    margin-top: 1rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.pick-destination span {
+    margin-right: 1rem;
+}
+
+.stars-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.stars-list .star {
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.stars-list .star:hover {
+    transform: translateX(-10px);
+}
+
+.about-star .name {
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    display: block;
+    text-transform: uppercase;
+}
+
+.about-star .descrp {
+    font-weight: 500;
+    font-size: 1.09rem;
+    border-bottom: 1px solid;
+    padding-bottom: 3rem;
+}
+
+.distance-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    font-weight: 500;
+}
+
+.distance-time .distance span,
+.distance-time .travel-time span {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@media (max-width:930px) {
+    .stars-list {
+        margin: 0 auto;
+    }
+
+    .distance-time {
+        margin: 0 auto 1rem;
+    }
+}
+
+@media (max-width:375px) {
+    .destination-content {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+}
